@@ -55,7 +55,7 @@
 {\large\sffamily}
 {}{0em}       % prefix a string to all sections (default: none)
 {}            % code before the heading (default: none)
-[\titlerule\vspace{0em}]  % draw line after section heading
+[\titlerule\vspace{0.2em}]  % draw line after section heading
 
 
 %% 
@@ -64,7 +64,7 @@
 \newcommand{\entryA}[2] {
   \sffamily{
     \noindent \hspace{0em} \textbf{#1} \hfill \textcolor{gray}{#2}
-    \vspace{-0.2em}
+    \vspace{-0.35em}
   }
 }
 
@@ -75,7 +75,7 @@
 \newcommand{\entryB}[3] {
   \sffamily{
     \noindent \hspace{0em} \textbf{#1}, #2 \hfill \textcolor{gray}{#3}
-    \vspace{-0.2em}
+    \vspace{-0.35em}
   }
 }
 
