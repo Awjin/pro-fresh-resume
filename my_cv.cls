@@ -15,7 +15,6 @@
 \RequirePackage{enumitem}
 
 \pagenumbering{gobble}       % remove page numbers
-\setlist[1]{itemsep=-0.2em}  % decrease separation bw enum items
 
 %% 
 % Name
@@ -52,10 +51,10 @@
 % Section
 % 
 \titleformat{\section}
-{\large\sffamily}
-{}{0em}       % prefix a string to all sections (default: none)
-{}            % code before the heading (default: none)
-[\titlerule\vspace{0.2em}]  % draw line after section heading
+{\Large\sffamily\color{gray}}
+{}{0em}            % prefix a string to all sections (default: none)
+{}                 % code before the heading (default: none)
+[\vspace{-0.2em}]  % control margin under header
 
 
 %% 
@@ -63,7 +62,7 @@
 % 
 \newcommand{\entryA}[2] {
   \sffamily{
-    \noindent \hspace{0em} \textbf{#1} \hfill \textcolor{gray}{#2}
+    \noindent \hspace{1em} \textbf{#1} \hfill \color{gray}{#2}
     \vspace{-0.35em}
   }
 }
@@ -74,7 +73,7 @@
 % 
 \newcommand{\entryB}[3] {
   \sffamily{
-    \noindent \hspace{0em} \textbf{#1}, #2 \hfill \textcolor{gray}{#3}
+    \noindent \hspace{1em} \textbf{#1}, #2 \hfill \color{gray}{#3}
     \vspace{-0.35em}
   }
 }
@@ -83,10 +82,11 @@
 %% 
 % Entry Detail
 % 
+\setlist[1]{itemsep=-0.2em,leftmargin=2.75em}
 \newcommand{\entrydetail}[1] {
   \small{
-  \item
-    \begin{adjustwidth}{1em}{8em}  % set left and right margins
+    \item
+    \begin{adjustwidth}{0em}{8.25em}  % set left and right margins
       \rmfamily{#1}
     \end{adjustwidth}
   }
@@ -97,7 +97,7 @@
 % Prose
 % 
 \newcommand{\prose}[1] {
-  \begin{adjustwidth}{0.4em}{0.4em}
+  \begin{adjustwidth}{1.4em}{0.4em}
     \rmfamily{#1}
   \end{adjustwidth}
 }
@@ -108,7 +108,7 @@
 % 
 \newcommand{\prosedetail}[1] {
   \item
-    \begin{adjustwidth}{1em}{0.4em}
+    \begin{adjustwidth}{0em}{0.4em}
       \rmfamily{#1}
     \end{adjustwidth}
 }
