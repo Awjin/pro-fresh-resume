@@ -97,7 +97,7 @@
 % Prose
 % 
 \newcommand{\prose}[1] {
-  \begin{adjustwidth}{1.4em}{0.4em}
+  \begin{adjustwidth}{1.3em}{0.4em}
     \rmfamily{#1}
   \end{adjustwidth}
 }
