@@ -12,8 +12,6 @@ This template focuses on the following:
   - [Section Title](https://github.com/Awjin/cv_template#section-title)
   - [Entry](https://github.com/Awjin/cv_template#entry)
   - [Entry Detail](https://github.com/Awjin/cv_template#entry-detail)
-  - [Prose](https://github.com/Awjin/cv_template#prose)
-  - [Prose Detail](https://github.com/Awjin/cv_template#prose-detail)
 - [Skeleton Code](https://github.com/Awjin/cv_template#skeleton-code)
 
 #Documentation
@@ -31,20 +29,18 @@ This will take care of everything (font, margins, etc.), so there is no need to 
 ```
 
 ###Contact Info
-The contact section takes 6 parameters:
+The contact section takes 4 parameters:
 ```
-\contact{1}{2}{3}{4}{5}{6}
+\contact{1}{2}{3}{4}
 ```
-1 gets stacked on top of 2 to comprise the leftmost column. In similar fashion, 3 and 4 comprise the middle column, and 5 and 6 comprise the rightmost column. These parameters don't have any predetermined type, so you can input any info into each.
+These will be displayed in one line underneath your name, with a dot separating each entry. Of course, this can be easily modified to accept more entries.
 
 Example:
 ```
-\contact{email}
-        {phone}
-        {linkedin}
+\contact{phone}
+	{email}
         {website}
-        {address line 1}
-        {address line 2}
+        {address}
 ```
 
 ###Section Title
@@ -85,33 +81,13 @@ A bullet point used to describe an entry. Needs to be encapsulated in an *itemiz
 \end{itemize}
 ```
 
-###Prose
-A prose entry (useful for describing objectives, professional skills, interests, etc.). Use two newlines to separate paragraphs. Every paragraph except the first is indented.
-```
-\prose {
-  This is paragraph 1.
-
-  This is paragraph 2.
-}
-```
-
-###Prose Detail
-This has the same function as the [entry detail](https://github.com/Awjin/cv_template#entry-detail), except it shares font-size and margins with prose text.
-```
-\begin{itemize}
-  \prosedetail{This is a long bullet point.}
-  \prosedetail{This is a longer bullet point.}
-  \prosedetail{This is the longest bullet point.}
-\end{itemize}
-```
-
 #Skeleton Code
 ```
 \documentclass{my_cv}
 \begin{document}
 
 \name{}
-\contact{}{}{}{}{}{}
+\contact{}{}{}{}
 
 \section{}
 
@@ -124,9 +100,6 @@ This has the same function as the [entry detail](https://github.com/Awjin/cv_tem
 \begin{itemize}
   \entrydetail{}
 \end{itemize}
-
-\prose{}
-\prosedetail{}
 
 \end{document}
 ```

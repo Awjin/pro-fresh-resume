@@ -21,29 +21,27 @@
 % 
 \newcommand{\name}[1] {
   \centerline{
-    \huge{\sffamily{#1}}
+    \sffamily{
+      \huge{#1}
+    }
   }
-  \vspace{1.5em}
+  \vspace{.75em}
 }
 
 
 %% 
 % Contact Info
-% 
-\newcommand{\contact}[6] {
-  \sffamily{
+%
+\newcommand{\contact}[4] {
     \centerline{
-      \makebox[0pt][l]{#1} \hfill
-      \makebox[0pt][c]{#3} \hfill
-      \makebox[0pt][r]{#5}
-    }
-    \centerline{
-      \makebox[0pt][l]{#2} \hfill
-      \makebox[0pt][c]{#4} \hfill
-      \makebox[0pt][r]{#6}
+      \sffamily{
+        \color{gray}{
+          #1 \hspace{.25em} $\cdot$ \hspace{.25em} #2 \hspace{.25em} $\cdot$ \hspace{.25em}
+          #3 \hspace{.25em} $\cdot$ \hspace{.25em} #4
+      }
     }
   }
-  \vspace{0.5em}
+  \vspace{.5em}
 }
 
 
@@ -51,10 +49,10 @@
 % Section
 % 
 \titleformat{\section}
-{\Large\sffamily\color{gray}}
-{}{0em}            % prefix a string to all sections (default: none)
-{}                 % code before the heading (default: none)
-[\vspace{-0.2em}]  % control margin under header
+{\sffamily\Large}
+{}{0em}           % prefix a string to all sections (default: none)
+{}                % code before the heading (default: none)
+[\vspace{-.2em}]  % control margin under header
 
 
 %% 
@@ -62,8 +60,8 @@
 % 
 \newcommand{\entryA}[2] {
   \sffamily{
-    \noindent \hspace{1em} \textbf{#1} \hfill \color{gray}{#2}
-    \vspace{-0.35em}
+    \noindent \hspace{1em} #1 \hfill \small{\color{gray}{#2}}
+    \vspace{-.5em}
   }
 }
 
@@ -73,8 +71,8 @@
 % 
 \newcommand{\entryB}[3] {
   \sffamily{
-    \noindent \hspace{1em} \textbf{#1}, #2 \hfill \color{gray}{#3}
-    \vspace{-0.35em}
+    \noindent \hspace{1em} #1, \ \color{darkgray}{#2} \hfill \small{\color{gray}{#3}}
+    \vspace{-.5em}
   }
 }
 
@@ -82,12 +80,12 @@
 %% 
 % Entry Detail
 % 
-\setlist[1]{itemsep=-0.2em,leftmargin=2.75em}
+\setlist[1]{itemsep=-.2em,leftmargin=2.75em}
 \newcommand{\entrydetail}[1] {
   \small{
     \item
     \begin{adjustwidth}{0em}{8.25em}  % set left and right margins
-      \rmfamily{#1}
+      \color{gray}\sffamily{#1}
     \end{adjustwidth}
   }
 }
@@ -97,7 +95,7 @@
 % Prose
 % 
 \newcommand{\prose}[1] {
-  \begin{adjustwidth}{1.3em}{0.4em}
+  \begin{adjustwidth}{1.3em}{.4em}
     \rmfamily{#1}
   \end{adjustwidth}
 }
@@ -108,15 +106,13 @@
 % 
 \newcommand{\prosedetail}[1] {
   \item
-    \begin{adjustwidth}{0em}{0.4em}
+    \begin{adjustwidth}{0em}{.4em}
       \rmfamily{#1}
     \end{adjustwidth}
 }
 
 
 %% 
-% Small Bullets
+% No Bullets
 % 
-\renewcommand{\labelitemi} {
-  $\cdot$
-}
+\renewcommand{\labelitemi} {}
