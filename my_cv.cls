@@ -7,7 +7,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{my_cv}
 
-\RequirePackage[margin=0.75in]{geometry}
+\RequirePackage[top=.75in, right=.75in, bottom=.75in, left=.75in]{geometry}
 \RequirePackage{changepage}
 \RequirePackage{titlesec}
 \RequirePackage{setspace}
@@ -35,13 +35,12 @@
 \newcommand{\contact}[4] {
     \centerline{
       \sffamily{
-        \color{gray}{
+        \color{darkgray}{
           #1 \hspace{.25em} $\cdot$ \hspace{.25em} #2 \hspace{.25em} $\cdot$ \hspace{.25em}
           #3 \hspace{.25em} $\cdot$ \hspace{.25em} #4
       }
     }
   }
-  \vspace{.5em}
 }
 
 
@@ -71,7 +70,7 @@
 % 
 \newcommand{\entryB}[3] {
   \sffamily{
-    \noindent \hspace{1em} #1, \ \color{darkgray}{#2} \hfill \small{\color{gray}{#3}}
+        \noindent \hspace{1em} #1 \color{gray}{\ $\cdot$\ } \color{darkgray}{#2} \hfill \small{\color{gray}{#3}}
     \vspace{-.5em}
   }
 }
