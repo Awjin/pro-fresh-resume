@@ -33,10 +33,10 @@
 % Section
 % 
 \titleformat{\section}
-{\vspace{-.5em} \Large}  % margin above Section header
+{\vspace{-.5em} \Large}    % margin above Section header
 {}{0em}
 {}
-[\vspace{0em}]            % margin under Section header
+[\vspace{0em}]             % margin under Section header
 
 
 %
