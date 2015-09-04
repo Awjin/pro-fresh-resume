@@ -30,13 +30,14 @@ Put this at the beginning of your tex file:
 ```
 
 ###Header
+Name is displayed in large font, left-aligned, with the remaining entries
+right-aligned.
 ```
 \header{name}
        {email}
        {phone}
 ```
-Name is displayed in large font, left-aligned, with the remaining entries
-right-aligned. You can add/remove entries in `my_cv.cls`.
+You can add/remove entries in `my_cv.cls`.
 
 ###Section
 Use these to organize the resume body.
