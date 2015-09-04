@@ -35,7 +35,7 @@ Put this at the beginning of your tex file:
        {email}
        {phone}
 ```
-Name will be displayed in large font, left-aligned, with the remaining entries
+Name is displayed in large font, left-aligned, with the remaining entries
 right-aligned. You can add/remove entries in `my_cv.cls`.
 
 ###Section
@@ -47,7 +47,7 @@ Use these to organize the resume body.
 ```
 
 ###Entry
-The resume entry. There are 3 fields: 1 and 2 are left-aligned, and 3 is
+The resume entry. There are three fields: 1 and 2 are left-aligned, and 3 is
 right-aligned.
 ```
 \entry{Job Title}{Company Name}{Dates}
@@ -66,7 +66,7 @@ Use these to describe a section or entry.
   \detail{This is something I accomplished.}
 
 \entry{}{}{}
-  \detail{This is something that I accomplished.}
+  \detail{This is another thing I accomplished.}
 ```
 
 
@@ -78,10 +78,14 @@ Use these to describe a section or entry.
 
 \header {}{}{}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{}
 
 \entry{}
 \detail{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
 ```
