@@ -51,10 +51,12 @@ Use these to organize the resume body.
 The resume entry. There are three fields: 1 and 2 are left-aligned, and 3 is
 right-aligned.
 ```
-\entry{Job Title}{Company Name}{Dates}
+\entry{1}{2}{3}
 ```
 Note that all fields are optional:
 ```
+\entry{Job Title}{Company}{Dates}
+
 \entry{Job Title}{}{Dates}
 
 \entry{Job Title}{}{}
@@ -74,7 +76,6 @@ Use these to describe a section or entry.
 #Skeleton Code
 ```
 \documentclass{my_cv}
-
 \begin{document}
 
 \header {}{}{}
