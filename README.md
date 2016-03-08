@@ -1,5 +1,7 @@
 # LaTex CV/Resume Template
 
+[View sample resume](https://github.com/Awjin/cv-template/blob/master/sample.pdf)
+
 ### Objectives
 - Sparse design
 - Clean typography
