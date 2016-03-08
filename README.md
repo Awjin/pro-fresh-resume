@@ -1,45 +1,25 @@
-#LaTex CV/Resume Template
+# LaTex CV/Resume Template
 
-**Table of Contents**
-- [Introduction](https://github.com/Awjin/cv_template#introduction)
-- [Documentation](https://github.com/Awjin/cv_template#documentation)
-  - [Importing the Class](https://github.com/Awjin/cv_template#importing-the-class)
-  - [Header](https://github.com/Awjin/cv_template#header)
-  - [Section](https://github.com/Awjin/cv_template#section)
-  - [Entry](https://github.com/Awjin/cv_template#entry)
-  - [Detail](https://github.com/Awjin/cv_template#detail)
-- [Skeleton Code](https://github.com/Awjin/cv_template#skeleton-code)
-
-
-#Introduction
-
-This template focuses on the following:
+**Objectives**
 - Sparse design
 - Clean typography
 - Customizability
 
-Style rules are found in `my_cv.cls`. Values most likely to be tweaked (margins,
-vertical spacing, etc.) are commented for easy editing.
+All style rules can be edited in `my_cv.cls`.
 
-#Documentation
-
-###Importing the Class
-Put this at the beginning of your tex file:
+### Importing the Class
+At the beginning of your tex file, put
 ```
 \documentclass{my_cv}
 ```
 
-###Header
-Name is displayed in large font, left-aligned, with the remaining entries
-right-aligned.
+### Header
+The first field is left-aligned and in large font. Remaining entries are right-aligned.
 ```
-\header{name}
-       {email}
-       {phone}
+\header{name}{email}{phone}
 ```
-You can add/remove entries in `my_cv.cls`.
 
-###Section
+### Section
 Use these to organize the resume body.
 ```
 \section{Education}
@@ -47,13 +27,12 @@ Use these to organize the resume body.
 \section{Employment}
 ```
 
-###Entry
-The resume entry. There are three fields: 1 and 2 are left-aligned, and 3 is
-right-aligned.
+### Entry
+Fields 1 and 2 are left-aligned. Field 3 is right-aligned.
 ```
 \entry{1}{2}{3}
 ```
-Note that all fields are optional:
+These fields don't have to be populated, but require `{}` even when empty:
 ```
 \entry{Job Title}{Company}{Dates}
 
@@ -62,7 +41,7 @@ Note that all fields are optional:
 \entry{Job Title}{}{}
 ```
 
-###Detail
+### Detail
 Use these to describe a section or entry.
 ```
 \section{}
@@ -73,21 +52,17 @@ Use these to describe a section or entry.
 ```
 
 
-#Skeleton Code
+### Skeleton Code
 ```
 \documentclass{my_cv}
 \begin{document}
 
-\header {}{}{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{}{}{}
 
 \section{}
 
-\entry{}
+\entry{}{}{}
 \detail{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
 ```
