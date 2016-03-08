@@ -1,4 +1,4 @@
-# LaTex CV/Resume Template
+# Latex Resume Template
 
 [View sample resume](https://github.com/Awjin/cv-template/blob/master/sample.pdf)
 
