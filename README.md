@@ -3,8 +3,8 @@
 [View sample resume](https://github.com/Awjin/cv-template/blob/master/sample.pdf)
 
 ### Objectives
-- Sparse design
-- Clean typography
+- Sparseness
+- Good typography
 - Customizability
 
 All style rules can be edited in `my_cv.cls`.
