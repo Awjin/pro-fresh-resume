@@ -1,43 +1,20 @@
-# Latex Resume Template
+#A Latex Résumé Template
 
-[View sample resume](https://github.com/Awjin/cv-template/blob/master/sample.pdf)
+<img src="https://awjin.me/pro-fresh-resume/sample.svg" alt="Resume sample" style="border: 1px solid gray !important;"/>
 
-### Objectives
-- Sparseness
-- Good typography
-- Customizability
+## Usage
 
-All style rules can be edited in `my_cv.cls`.
-
-### Starter Code
-```
-\documentclass{my_cv}
-\begin{document}
-
-\header{}{}{}
-
-\section{}
-
-\entry{}{}{}
-\detail{}
-
-\end{document}
-```
-
-### Importing the Class
-At the beginning of your tex file, put
-```
-\documentclass{my_cv}
-```
+### Import the Class
+Put `\documentclass{resume}` at the top of your tex file.
 
 ### Header
-The first field is left-aligned and in large font. Remaining entries are right-aligned.
+First field is large and left-aligned. Remaining entries are right-aligned.
 ```
 \header{name}{email}{phone}
 ```
 
 ### Section
-Use these to organize the resume body.
+Use these to organize the body.
 ```
 \section{Education}
 
@@ -45,11 +22,12 @@ Use these to organize the resume body.
 ```
 
 ### Entry
-Fields 1 and 2 are left-aligned. Field 3 is right-aligned.
+Fields 1 and 2 are left-aligned, field 3 is right-aligned.
 ```
 \entry{1}{2}{3}
 ```
-These fields don't have to be populated, but require `{}` even when empty:
+
+Note: These fields don't all have to be populated, but require `{}` even when empty. For example:
 ```
 \entry{Job Title}{Company}{Dates}
 
@@ -66,4 +44,19 @@ Use these to describe a section or entry.
 
 \entry{}{}{}
   \detail{This is another thing I accomplished.}
+```
+
+### Starter Code
+```
+\documentclass{my_cv}
+\begin{document}
+
+\header{}{}{}
+
+\section{}
+
+\entry{}{}{}
+\detail{}
+
+\end{document}
 ```
