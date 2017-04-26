@@ -1,4 +1,4 @@
-# A Latex Résumé Template
+# A LaTex Resumé Template
 
 ![Resume sample](https://github.com/Awjin/pro-fresh-resume/blob/master/sample.png)
 
