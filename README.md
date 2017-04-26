@@ -1,6 +1,6 @@
-#A Latex Résumé Template
+# A Latex Résumé Template
 
-<img src="https://awjin.me/pro-fresh-resume/sample.svg" alt="Resume sample" style="border: 1px solid gray !important;"/>
+![Resume sample](https://github.com/Awjin/pro-fresh-resume/blob/master/sample.png)
 
 ## Usage
 
